@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Survey Form Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1 id="title">A Survey Form</h1>
+<div class="container">
+    <p id="description">
+        Let me know what is something that confuses the heck out of you
+    </p>
+    <form id="survey-form" method="get" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="field">
+            <div class="label">
+                <label for="name" id="name-label">* Name:</label>
+            </div>
+            <div class="field-input">
+                <input autofocus type="text" name="name" id="name" class="input" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="email" id="email-label">* Email:</label>
+            </div>
+            <div class="field-input">
+                <input type="email" name="email" id="email" class="input" placeholder="Enter your email" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="number" id="number-label">* Age:</label>
+            </div>
+            <div class="field-input">
+                <input type="number" name="age" id="number" min="1" max="125" class="input" placeholder="Enter your age"
+                       required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="dropdown" id="role-label">Which option best describes your current role?</label>
+            </div>
+            <div class="field-input">
+                <select id="dropdown" name="dropdown" class="dropdown">
+                    <option disabled value>Select one</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full-time job</option>
+                    <option value="learner">Full-time learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="radio" id="radio-label">How likely is that you would recommend online learning to a
+                    friend?</label>
+            </div>
+            <div class="field-input">
+                <ul style="list-style-type: none;" id="radio">
+                    <li class="radio">
+                        <label><input name="radio-buttons" value="1" type="radio"
+                                      class="field-list-item">Definitely</label>
+                    </li>
+                    <li class="radio">
+                        <label><input name="radio-buttons" value="2" type="radio" class="field-list-item">Maybe</label>
+                    </li>
+                    <li class="radio">
+                        <label><input name="radio-buttons" value="3" type="radio" class="field-list-item">Not
+                            sure</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="checkbox" id="checkbox-label">Is learning about new things part of your:</label>
+            </div>
+            <div class="field-input">
+                <ul style="list-style-type: none;" id="checkbox">
+                    <li class="checkbox">
+                        <label><input name="checkbox-buttons" value="1" type="checkbox"
+                                      class="field-list-item">Work</label>
+                    </li>
+                    <li class="checkbox">
+                        <label><input name="checkbox-buttons" value="2" type="checkbox"
+                                      class="field-list-item">Hobby</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="comments" id="comments-label">Comments:</label>
+            </div>
+            <div class="field-input">
+                <textarea name="comments" id="comments" placeholder="Enter your comments here..."
+                          class="textarea"></textarea>
+            </div>
+        </div>
+
+        <button id="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
